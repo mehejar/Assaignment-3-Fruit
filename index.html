@@ -53,6 +53,10 @@
             top: 100px;
             left: 100px;
         }
+        .search-i{
+            position: absolute;
+            right: 400px;
+        }
     </style>
 
 </head>
@@ -91,21 +95,26 @@
                 <img src="./images/logo.png" alt="">
                 <h3 class="font-bold text-4xl text-white">Fruit Burst</h3>
             </div>
+            <div>
+                <i class="fa-solid text-[#121212] search-i fa-magnifying-glass"></i>
+            </div>
             <div class="flex-none gap-2">
                 <div class="form-control">
                     <input type="text" placeholder="Search here"
                         class="input input-bordered rounded-full w-24 md:w-auto" />
+                        
                 </div>
 
             </div>
         </div>
+        
     </nav>
     <!-- banner Section -->
     <section class="">
 
         <div class="carousel mx-5 md:mx-24 lg:mx-60 w-auto">
             <div id="slide1" class=" carousel-item relative w-full bg-black">
-                <img src="./images/banner1.png" class="w-full opacity-70" />
+                <img src="./images/banner1.png" class="w-full opacity-70 rounded-lg" />
 
 
 
@@ -115,7 +124,7 @@
                 </div>
             </div>
             <div id="slide2" class=" carousel-item relative w-full md:w-full bg-black">
-                <img src="./images/banner2.png" class="w-full opacity-70" />
+                <img src="./images/banner2.png" class="w-full opacity-70 rounded-lg" />
 
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide1" class="btn btn-circle">❮</a>
@@ -123,7 +132,7 @@
                 </div>
             </div>
             <div id="slide3" class=" carousel-item relative w-full md:w-full bg-black">
-                <img src="./images/banner3.png" class="w-full opacity-70" />
+                <img src="./images/banner3.png" class="w-full opacity-70 rounded-lg" />
 
 
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -132,7 +141,7 @@
                 </div>
             </div>
             <div id="slide4" class="carousel-item relative w-full bg-black">
-                <img src="./images/banner4.png" class="w-full opacity-70" />
+                <img src="./images/banner4.png" class="w-full opacity-70 rounded-lg" />
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 ">
                     <a href="#slide3" class="btn btn-circle">❮</a>
                     <a href="#slide1" class="btn btn-circle">❯</a>
@@ -142,8 +151,8 @@
         <div class=" hidden md:block lg:block text-banner text-center justify-center items-center w-1/2 mx-auto">
             <h3 class="text-white text-center text-3xl md:text-6xl  font-bold">Exotic tastes at <br> your doorstep
             </h3>
-            <p class="text-white">We supply highly quality organic products</p>
-            <button class="btn text-white bg-primery-color" style="border: 0px;">Shop Now</button>
+            <p class="text-white mt-4">We supply highly quality organic products</p>
+            <button class="btn mt-4 text-white bg-primery-color" style="border: 0px;">Shop Now</button>
         </div>
         <div class=" block md:hidden lg:hidden text-bannerm text-center justify-center items-center w-1/2 mx-auto">
             <h3 class="text-white text-center text-xl  font-bold">Exotic tastes at your doorstep
@@ -458,7 +467,7 @@
                 </div>
             </div>
             <!-- details Start -->
-            <div class="flex flex-col md:flex-row lg:flex-row pb-8">
+            <div class="flex flex-col pl-4 pb-8 md:pl-0 md:flex-row lg:flex-row pb-8 lg:pl-10">
                 <div class="card w-80 mt-5 ">
                     <figure class="">
                         <img src="./images/member1.png" alt="Shoes" class="rounded-xl" />
@@ -476,10 +485,10 @@
                 </div>
                 <div class="card w-80 mt-5 ">
                     <figure class="">
-                        <img src="./images/member2.png" alt="Shoes" class="rounded-xl" />
+                        <img src="./images/membermy-08.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title -mt-4 text-white">Ahmed Ali</h2>
+                        <h2 class="card-title -mt-4 text-white">Atar Khan</h2>
                         <p class="-mt-3 text-white">Fruit Expert</p>
                         <div class="flex gap-3">
                             <img class="w-[30px] h-[30px]" src="./Icon/icon-01.png" alt="">
@@ -494,7 +503,7 @@
                         <img src="./images/member3.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title -mt-4 text-white">Ahmed Ali</h2>
+                        <h2 class="card-title -mt-4 text-white">Tamim Iqbal</h2>
                         <p class="-mt-3 text-white">Fruit Expert</p>
                         <div class="flex gap-3">
                             <img class="w-[30px] h-[30px]" src="./Icon/icon-01.png" alt="">
@@ -506,10 +515,10 @@
                 </div>
                 <div class="card w-80 mt-5 ">
                     <figure class="">
-                        <img src="./images/member4.png" alt="Shoes" class="rounded-xl" />
+                        <img src="./images/membermy-09.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title -mt-4 text-white">Ahmed Ali</h2>
+                        <h2 class="card-title -mt-4 text-white">Mashrafi Mortuza</h2>
                         <p class="-mt-3 text-white">Fruit Expert</p>
                         <div class="flex gap-3">
                             <img class="w-[30px] h-[30px]" src="./Icon/icon-01.png" alt="">
@@ -530,7 +539,7 @@
         <div>
             <div class="text-center pt-5 md:pt-10 lg:pt-24">
                 <h2 class="text-5xl font-bold">Why Choose Us</h2>
-                <p class="text-lg">Contrary to popular belief, is not simply random text. It has roots in a piece
+                <p class="text-lg mt-5">Contrary to popular belief, is not simply random text. It has roots in a piece
                     of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
             <div class="flex flex-col md:flex-row gap-8 items-center">
