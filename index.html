@@ -41,6 +41,17 @@
             position: relative;
             bottom: 110px;
         }
+        .text-banner{
+            position: absolute;
+            bottom: 410px;
+            right: 500px;
+        }
+        .text-bannerm{
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+        
     </style>
 
 </head>
@@ -89,59 +100,60 @@
         </div>
     </nav>
     <!-- banner Section -->
-    <section>
+    <section class="">
+        
         <div class="carousel mx-5 md:mx-24 lg:mx-60 w-auto">
-            <div id="slide1" class=" carousel-item relative w-full"
-                style="background-image: url(./images/banner1.png);">
-                <div class="flex flex-col gap-3 md:gap-6 lg:gap-8 mx-auto justify-center items-center">
-                    <h3 class="text-white text-center text-3xl md:text-7xl  font-bold">Exotic tastes at your doorstep
-                    </h3>
-                    <p class="text-white">We supply highly quality organic products</p>
-                    <button class="btn text-white bg-primery-color" style="border: 0px;">Shop Now</button>
-                </div>
+            <div id="slide1" class=" carousel-item relative w-full bg-black">
+                <img src="/images/banner1.png" class="w-full opacity-70" />
+                
+                
 
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide4" class="btn btn-circle">❮</a>
                     <a href="#slide2" class="btn btn-circle">❯</a>
                 </div>
             </div>
-            <div id="slide2" class=" carousel-item relative w-full md:w-full"
-                style="background-image: url(./images//banner2.png);">
-                <div class="flex flex-col gap-3 md:gap-6 lg:gap-8 mx-auto justify-center items-center">
-                    <h3 class="text-white text-center text-3xl md:text-7xl  font-bold">Exotic tastes at your doorstep
-                    </h3>
-                    <p class="text-white">We supply highly quality organic products</p>
-                    <button class="btn text-white bg-primery-color" style="border: 0px;">Shop Now</button>
-                </div>
+            <div id="slide2" class=" carousel-item relative w-full md:w-full bg-black">
+                <img src="/images/banner2.png" class="w-full opacity-70" />
+                
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide1" class="btn btn-circle">❮</a>
                     <a href="#slide3" class="btn btn-circle">❯</a>
                 </div>
             </div>
-            <div id="slide3" class=" carousel-item relative w-full md:w-full"
-                style="background-image: url(./images//banner3.png);">
-                <div class="flex flex-col gap-3 md:gap-6 lg:gap-8 mx-auto justify-center items-center">
-                    <h3 class="text-white text-center text-3xl md:text-7xl  font-bold">Exotic tastes at your doorstep
-                    </h3>
-                    <p class="text-white">We supply highly quality organic products</p>
-                    <button class="btn text-white bg-primery-color" style="border: 0px;">Shop Now</button>
-                </div>
+            <div id="slide3" class=" carousel-item relative w-full md:w-full bg-black">
+                <img src="/images/banner3.png" class="w-full opacity-70" />
+                
+                
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide2" class="btn btn-circle">❮</a>
                     <a href="#slide4" class="btn btn-circle">❯</a>
                 </div>
             </div>
-            <div id="slide4" class="carousel-item relative w-full">
-                <img src="./images//banner4.png" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <div id="slide4" class="carousel-item relative w-full bg-black">
+                <img src="./images/banner4.png" class="w-full opacity-70" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 ">
                     <a href="#slide3" class="btn btn-circle">❮</a>
                     <a href="#slide1" class="btn btn-circle">❯</a>
                 </div>
             </div>
         </div>
+        <div class=" hidden md:block lg:block text-banner text-center justify-center items-center w-1/2 mx-auto">
+            <h3 class="text-white text-center text-3xl md:text-6xl  font-bold">Exotic tastes at <br> your doorstep
+            </h3>
+            <p class="text-white">We supply highly quality organic products</p>
+            <button class="btn text-white bg-primery-color" style="border: 0px;">Shop Now</button>
+        </div>
+        <div class=" block md:hidden lg:hidden text-bannerm text-center justify-center items-center w-1/2 mx-auto">
+            <h3 class="text-white text-center text-xl  font-bold">Exotic tastes at  your doorstep
+            </h3>
+            <p class="text-white text-xs">We supply highly quality organic products</p>
+            <button class="p-2 rounded-md text-white bg-primery-color" style="border: 0px;">Shop Now</button>
+        </div>
+        
     </section>
     <!-- bonus Banner bottom -->
-    <section class=" fruit-name hidden md:block lg:block bg-white drop-shadow-2xl rounded-lg w-[1196px] mx-auto">
+    <section class=" fruit-name hidden md:hidden lg:block bg-white drop-shadow-2xl rounded-lg w-[1196px] mx-auto">
         <div class=" flex gap-20 justify-center p-7">
             <div class="text-center">
                 <img src="./images/fruit1.png" alt="">
@@ -172,16 +184,16 @@
     </section>
     <!-- deal of the day -->
     <section class="mb-14 mt-7 mx-5 md:mx-20 lg:mx-60">
-        <div class="flex flex-col md:flex-col lg:flex-row justify-between">
+        <div class="flex flex-col md:flex-col lg:flex-row justify-center">
             <div>
                 <h2 class="text-4xl font-bold ">Deal of the day</h2>
-                <p class="text-lg mt-4 text-gray-700 font-normal">Contrary to popular belief, is not simply random text.
+                <p class="text-lg mt-4 text-gray-700 font-normal w-full md:w-1/2">Contrary to popular belief, is not simply random text.
                     It
-                    has roots in a piece of classical <br>
+                    has roots in a piece of classical
                     Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
             <!-- coundown Section -->
-            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+            <div class="mt-5 md:mt-0 grid grid-flow-col gap-5 text-center auto-cols-max">
                 <div class="flex flex-col">
                     <span class="countdown font-mono text-5xl font-bold">
                         <span style="--value:15;"></span>
@@ -210,7 +222,7 @@
 
         </div>
 
-        <div class=" mt-10 mb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class=" pl-4 md:pl-0 mt-10 mb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <!-- Card 1 Started -->
             <div class="card w-80 bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
@@ -430,9 +442,9 @@
         </div>
     </section>
     <!-- Meet the Team Section -->
-    <section class=" mx-5 md:mx-20 lg:mx-60 w-auto"
+    <section class=" hidden mx-5 h-[1340px] md:h-auto md:mx-20 lg:mx-60 w-auto "
         style="background-image: url(./images/banner1.png); background-repeat: no-repeat;">
-        <div class="text-center pt-5 md:pt-10 lg:pt-24">
+        <div class="text-center pt-5 md:pt-10 lg:pt-24 bg-opacity-80">
             <h2 class="text-5xl text-white font-bold">Meet The Team</h2>
             <p class="text-white text-lg">Contrary to popular belief, is not simply random text. It has roots in a piece
                 of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
@@ -440,7 +452,7 @@
         <div class=" grid grid-cols-1 gap-5 p-5 md:p-10 lg:p-20 md:grid-cols-2 lg:grid-cols-4 justify-evenly w-auto">
             <!-- Details 1 -->
             <div>
-                <div class="card w-96 shadow-xl">
+                <div class="card w-96">
                     <figure class="px-10">
                         <img src="/images/member1.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -457,7 +469,7 @@
             </div>
             <!-- Details 1 -->
             <div>
-                <div class="card w-96 shadow-xl">
+                <div class="card w-96">
                     <figure class="px-10">
                         <img src="/images/member1.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -474,7 +486,7 @@
             </div>
             <!-- Details 1 -->
             <div>
-                <div class="card w-96 mx-auto shadow-xl">
+                <div class="card w-96 mx-auto">
                     <figure class="px-10">
                         <img src="/images/member1.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -491,7 +503,7 @@
             </div>
             <!-- Details 1 -->
             <div>
-                <div class="card w-96 shadow-xl">
+                <div class="card w-96">
                     <figure class="px-10">
                         <img src="/images/member1.png" alt="Shoes" class="rounded-xl" />
                     </figure>
